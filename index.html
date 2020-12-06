@@ -4,6 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <div class="js-clock clock">
+        <h1>00:00</h1>
+      </div>
+      <div class="greeting">
+        <form class="js-form form">
+          <input type="text" placeholder="당신의 이름을 적어주세요" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+      </div>
+      <div class="todo">
+        <form class="js-todo">
+          <input
+            type="text"
+            class="todo__text"
+            placeholder="목표를 적어주세요"
+          />
+        </form>
+        <h3 class="todo__title">RUN!</h3>
+        <ul class="js-todoList"></ul>
+      </div>
+      <div class="js-weather weather">
+        <div class="weather__title"></div>
+      </div>
+      <script src="js/clock.js"></script>
+      <script src="js/greeting.js"></script>
+      <script src="js/todo.js"></script>
+      <script src="js/weather.js"></script>
+      <script src="js/bg.js"></script>
+    </section>
+  </body>
 </html>
